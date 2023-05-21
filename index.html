@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>El Baghdadi Rim Profile</title>
+		<link href="style.css" rel="stylesheet">
+		<meta name="description" content="My web development class profile">
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/d1656db9d9.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div class="block-WHITE" id="introduction">	
+				<H1> <strong>Hi, I am Rim</strong> </H1>
+					<img src="images/picture.JPG" alt="My Profile Picture" class="img-profile">
+						<p>
+							I'm a fourth year student in the Global Bachelor of Business Administration program at ESSEC Business School in France.
+						</p>
+						<a href="https://www.essec.edu/en/" class="btn-blue"> ESSEC Business School </a>
+			</div>
+
+			<div class="block-WHITE">
+				<h2>Hobbies</h2>
+					<ul>
+						<li><i class="fas fa-book-reader"></i> Reading</li>
+						<li><i class="fas fa-pencil-ruler"></i> Drawing</li>
+						<li><i class="far fa-edit"></i> Graphic design</li>
+						<li><i class="fas fa-globe-africa"></i> Traveling</li>
+						<li><i class="fas fa-paint-brush"></i> Painting</li>
+						<li><i class="fas fa-exchange-alt"></i> Exchanging ideas</li>
+						<li><i class="fas fa-paw"></i> Animals</li>
+						<li><i class="fas fa-dragon"></i> Comics</li>
+						<Li><i class="fas fa-tv"></i> TV-Series</Li>
+						<li><i class="fas fa-film"></i> Movies</li>
+						<li><i class="fas fa-headphones-alt"></i> Music</li>
+					</ul>
+			</div>
+
+			<div class="block-WHITE">
+					<h2>Art</h2>
+						<p>
+							Art is really my passion. I love painting, drawing and I doodle all the time. I've tried many different techniques, from simple sketching to watercolor, guache paint and digital art with a graphic tablet. I have also been very interested in film photography. I started during my exchange semester in Japan.
+						</p>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							    <div class="numbertext">1 / 8</div>
+							    	<img src="images/image1.JPG" style="width:100%">
+							 </div>
+							 <div class="mySlides fade">
+							    <div class="numbertext">2 / 8</div>
+							   		<img src="images/image2.JPG" style="width:100%">
+							  </div> 
+							 <div class="mySlides fade">
+    							<div class="numbertext">3 / 8</div>
+    								<img src="images/image3.JPG" style="width:100%">
+ 								</div>
+ 							<div class="mySlides fade">
+   								<div class="numbertext">4 / 8</div>
+    								<img src="images/image4.JPG" style="width:100%">
+  							</div>
+		  					<div class="mySlides fade">
+		   						<div class="numbertext">5 / 8</div>
+		    						<img src="images/image5.JPG" style="width:100%">
+		  					</div>			
+							<div class="mySlides fade">
+   								<div class="numbertext">6 / 8</div>
+    								<img src="images/image6.JPG" style="width:100%">
+  							</div>
+							<div class="mySlides fade">
+   								<div class="numbertext">7 / 8</div>
+    								<img src="images/image7.JPG" style="width:100%">
+  							</div>
+  							<div class="mySlides fade">
+   								<div class="numbertext">8 / 8</div>
+    								<img src="images/image8.jpg" style="width:100%">
+  							</div>
+  							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ 							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+						<br>
+						<div style="text-align:center">
+						  <span class="dot" onclick="currentSlide(1)"></span>
+						  <span class="dot" onclick="currentSlide(2)"></span>
+						  <span class="dot" onclick="currentSlide(3)"></span>
+						  <span class="dot" onclick="currentSlide(4)"></span>
+						  <span class="dot" onclick="currentSlide(5)"></span>
+						  <span class="dot" onclick="currentSlide(6)"></span>
+						  <span class="dot" onclick="currentSlide(7)"></span>
+						  <span class="dot" onclick="currentSlide(8)"></span>
+						</div>
+
+							<script>
+								var slideIndex = 1;
+								showSlides(slideIndex);
+
+								function plusSlides(n) {
+								  showSlides(slideIndex += n);
+								}
+
+								function currentSlide(n) {
+								  showSlides(slideIndex = n);
+								}
+
+								function showSlides(n) {
+								  var i;
+								  var slides = document.getElementsByClassName("mySlides");
+								  var dots = document.getElementsByClassName("dot");
+								  if (n > slides.length) {slideIndex = 1}    
+								  if (n < 1) {slideIndex = slides.length}
+								  for (i = 0; i < slides.length; i++) {
+								      slides[i].style.display = "none";  
+								  }
+								  for (i = 0; i < dots.length; i++) {
+								      dots[i].className = dots[i].className.replace(" active", "");
+								  }
+								  slides[slideIndex-1].style.display = "block";  
+								  dots[slideIndex-1].className += " active";
+								}
+							</script>
+			</div>
+
+			<div class="block-WHITE">
+					<H2>Extracurriculars</H2>
+						<p>
+							I have been invested in extracurricular activities since the beginning of my studies. I joined <a href="https://www.facebook.com/HeForSheESSEC/" target ="blank"> HeForShe ESSEC</a> in 2019 which is a subsidiary of sorts of HeForShe, solidarity movement for the advancement of gender equality, initiated by the United Nations Women. Our goals are to put an end to gender-based and sexual violence in ESSEC and promote a safe and inclusive learning environment. In my first year at ESSEC, I was elected Secretary General of the association from fall 2019 all throughout 2020, and I remain an active member ever since my mandate. The student organization gained a lot of influence within ESSEC, and we work hand in hand with the administration and different programs’ BDEs (student councils) to set up party angels to all student parties, among other things. I later joined <a href="https://essecjapon.wordpress.com/" target="blank"> ESSEC Japon </a> in 2021, a student organization promoting the discovery and appreciation of Japanese culture inside ESSEC. I have been acting as Head of Communications since Summer 2022. Most of my tasks consist of managing our social media accounts, designing visuals and acting as artistic director for the association’s projects and events.
+						</p>
+			</div>
+
+			<div class="block-WHITE">
+					<h2><i class="fas fa-hashtag"></i> Social Media <i class="fas fa-hashtag"></i></h2>
+						<ul class="list-inline">
+							<li>
+								<a href="https://www.facebook.com/rim.elbaghdadi" target="blank">
+									<i class="fab fa-facebook"></i> Facebook
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/rim.el.b/" target="blank">
+									<i class="fab fa-instagram"></i> Instagram
+								</a>						
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/rim-el-baghdadi/" target="blank">
+									<i class="fab fa-linkedin"></i> LinkedIn
+								</a>
+							</li>
+						</ul>
+			</div>
+
+			<div class="block-WHITE">
+					<H2><i class="fas fa-address-card"></i> Contact me </H2>
+						<p>
+							<strong> <i class="fas fa-paper-plane"></i> E-mail address:</strong> <a href="mailto:b00773816@essec.edu" target="blank"> b00773816@essec.edu </a>
+						</p>
+			</div>
+
+		</div>
+	</body>
+</html>
